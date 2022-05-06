@@ -61,7 +61,7 @@ public class ProductRestController {
 
 	@RequestMapping(value = "json/updateProduct", method = RequestMethod.POST)
 	public Product updateProduct(@RequestBody Product product) throws Exception {
-		System.out.println("/product/json/udateProduct : POST");
+		System.out.println("/product/json/updateProduct : POST");
 		System.out.println("::" + product);
 		productService.updateProduct(product);
 		return product;
